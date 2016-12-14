@@ -16,6 +16,6 @@ OUTPUT looks like
         --- ^
     test on my program
         ^---
-   _ is a change 
-   ^ is a insertion 
+       _ is a change 
+       ^ is a insertion 
 -------------------------------------------------
