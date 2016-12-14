@@ -3,16 +3,19 @@ This is a simple function for finding difference between two strings in go langu
 
 
 Sample/Usage is given in the file
+
+Function returns an array of int containing starting position and ending position of sub-substrings which are different.One after the other. If ending position is -1, it means that the other string has a substring inserted at this position.
+
 OUTPUT looks like
 
 --------------------------------------------------
-old word marker-: [4 6 8 -1]
-new word marker-: [4 -1 5 7]
+   old word marker-: [4 6 8 -1]
+   new word marker-: [4 -1 5 7]
 
- testing my program
-     --- ^
- test on my program
-     ^---
-_ is a change 
-^ is a insertion 
+    testing my program
+        --- ^
+    test on my program
+        ^---
+   _ is a change 
+   ^ is a insertion 
 -------------------------------------------------
