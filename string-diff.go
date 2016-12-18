@@ -32,16 +32,18 @@ func matchstring (old_word string,new_word string ) ([]int,[]int) {
 		down:=1
 		attempted:=true
 	nextsquare :
-		//searching diagonally
+		//searching in square
 		for k:=i;k<=i+down;k++ {
+		     for kj:=j;kj<=j+down;kj++ {
 			attempted=false
 			if k<len(old_word)-1 && (i+j+down-k)<len(new_word)-1 {
-			      attempted=true    
-			      if old_word[k]==new_word[i+j+down-k] {
-				      valueofi=k
-				      valueofj=i+j+down-k  
-			      } 
+			    attempted=true    
+			    if old_word[k]==new_word[kj] {
+				    valueofi=k 
+				    valueofj=kj
+			    } 
 			}
+		     }
 		}
 		if valueofi==-1 && valueofj==-1 && !attempted {
 			markeroldword=append(markeroldword,len(old_word)-1)
