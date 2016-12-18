@@ -9,13 +9,13 @@ Function returns an array of int containing starting position and ending positio
 Output looks like
 
 --------------------------------------------------
-     old word marker-: [4 6 8 -1]
-     new word marker-: [4 -1 5 7]
+     old word marker-: [4 4 6 6]
+     new word marker-: [4 5 7 -1]
 
     testing my program
-        --- ^
+        - - 
     test on my program
-        ^---
+        -- ^
        _ is a change 
        ^ is a insertion 
 -------------------------------------------------
