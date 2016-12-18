@@ -6,7 +6,7 @@ import (
 func matchstring (old_word string,new_word string ) ([]int,[]int) {
 	markeroldword:=[]int{}
 	markernewword:=[]int{}
-        var matching [200][200] int
+        var matching [1000][1000] int
         old_word=old_word+" "
 	new_word=new_word+" "
 	for i:=0;i<len(old_word);i++ {
