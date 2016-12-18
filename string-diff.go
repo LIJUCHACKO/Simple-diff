@@ -6,16 +6,26 @@ import (
 func matchstring (old_word string,new_word string ) ([]int,[]int) {
 	markeroldword:=[]int{}
 	markernewword:=[]int{}
-        var matching [1000][1000] int
+         matching:= [][] int{}
         old_word=old_word+" "
 	new_word=new_word+" "
-	for i:=0;i<len(old_word);i++ {
-		for j:=0;j<len(new_word);j++ {
-			if old_word[i] == new_word[j] {
-			      matching[i][j]=1
-			}
+	for i:=0;i<=len(old_word)+1;i++ {
+		row:=[]int{}
+		for j:=0;j<=len(new_word)+1;j++ {
+			  
+			  if i< len(old_word) && j<len(new_word) {
+			        if old_word[i] == new_word[j] {
+				      row=append(row,1)
+				} else {
+				     row=append(row,0)
+				}
+			  } else {
+				row=append(row,0)
+			  }
 		}
+		matching=append(matching,row)
 	}
+
 
 	for j:=-len(new_word);j<=len(new_word);j++ {
 		for i:=len(old_word)-1;i>=0;i-- {
