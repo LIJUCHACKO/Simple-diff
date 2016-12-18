@@ -36,7 +36,7 @@ func matchstring (old_word string,new_word string ) ([]int,[]int) {
 		for k:=i;k<=i+down;k++ {
 		     for kj:=j;kj<=j+down;kj++ {
 			attempted=false
-			if k<len(old_word)-1 && (i+j+down-k)<len(new_word)-1 {
+			if k<len(old_word)-1 && kj<len(new_word)-1 {
 			    attempted=true    
 			    if old_word[k]==new_word[kj] {
 				    valueofi=k 
